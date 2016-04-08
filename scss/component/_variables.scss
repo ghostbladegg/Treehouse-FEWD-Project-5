@@ -1,0 +1,18 @@
+// Base Color
+$color-background: #ddd;
+
+// Navigation Color
+$color-nav: #fff;
+$color-nav-hover: darken($color-nav, 5%);
+
+// Font Color
+$color-font: #555;
+$color-text: #888;
+
+// Font
+$font-size-primary: 1.2em;
+$font-family: "Comic Sans MS", Serif;
+
+// Break Point
+$break-tablet: 768px;
+$break-desktop: 1024px;

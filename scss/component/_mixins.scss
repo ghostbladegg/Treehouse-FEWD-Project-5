@@ -1,0 +1,4 @@
+@mixin col($float: null, $width: null) {
+  float: $float;
+  width: $width;
+}

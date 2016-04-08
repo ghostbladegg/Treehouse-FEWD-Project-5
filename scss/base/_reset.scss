@@ -1,0 +1,12 @@
+* {
+  @extend %border-box;
+}
+
+ul {
+  @extend %zero;
+  list-style: none;
+}
+
+h1 {
+  @extend %zero;
+}

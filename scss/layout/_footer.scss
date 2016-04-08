@@ -1,0 +1,28 @@
+footer {
+  @extend %cf;
+  span {
+    @extend %padding-div;
+    @extend %float-left;
+    @extend %head-color;
+  }
+  a {
+    @extend %padding-div;
+    @extend %float-right;
+  }
+  .footer-nav {
+    display: none;
+  }
+  @media screen and (min-width: $break-tablet) {
+    > a {
+      display: none;
+    }
+    .footer-nav {
+      display: block;
+      @include col(right);
+      li {
+        display: inline-block;
+        @include col(left);
+      }
+    }
+  }
+}

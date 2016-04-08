@@ -1,0 +1,89 @@
+.wrapper {
+  background-color: $color-background;
+  @extend %margin-center;
+}
+
+@each $divs in profile, portfolio, contact {
+  .#{$divs} {
+    @extend %margin-div;
+    @extend %padding-div;
+  }
+}
+
+.profile {
+  @extend %cf;
+  img {
+    width: 75%;
+    @extend %display-block;
+    @extend %margin-center;
+  }
+  p {
+    @extend %text-center;
+    @extend %text-size;
+    @extend %font-weight-lighter;
+  }
+  @media screen and (min-width: $break-tablet) {
+    img {
+      @include col(right, 35%);
+    }
+    p {
+      @include col(left, 65%);
+      text-align: left;
+      padding: 0 10px;
+    }
+  }
+}
+
+.portfolio {
+  @extend %cf;
+  background-color: #fff;
+  h2 {
+    @extend %text-center;
+  }
+  h3 {
+    @extend %text-center;
+  }
+  .gallery {
+    @extend %text-center;
+    @extend %text-size;
+    @extend %font-weight-lighter;
+  }
+  @media screen and (min-width: $break-tablet) {
+    li {
+      @include col(left, 50%);
+      padding: 0 10px;
+    }
+  }
+  @media screen and (min-width: $break-desktop) {
+    margin: 15px;
+    li {
+      @include col(left, 33.33%);
+    }
+    li:nth-child(4n) {
+      clear: left;
+    }
+  }
+}
+
+.contact {
+  h2 {
+    @extend %text-center;
+  }
+  p {
+    @extend %text-center;
+    @extend %font-weight-lighter;
+    a {
+      @extend %text-transform-none;
+    }
+  }
+  @media screen and (min-width: $break-tablet) {
+    p {
+      padding: 0 50px;
+    }
+  }
+  @media screen and (min-width: $break-desktop) {
+    p {
+      padding: 0 200px;
+    }
+  }
+}

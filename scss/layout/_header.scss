@@ -1,0 +1,42 @@
+header {
+  @extend %cf;
+  h1 {
+    @extend %padding-div;
+    @extend %text-center;
+    a {
+      @extend %text-transform-none;
+    }
+  }
+  .main-nav {
+    @extend %padding-div;
+    a {
+      @extend %padding-div;
+      @extend %display-block;
+      @extend %text-center;
+    }
+    li {
+      margin: 5px 0;
+      background-color: $color-nav;
+      &:hover, &:active {
+        background-color: $color-nav-hover;
+      }
+    }
+  }
+  @media screen and (min-width: $break-tablet) {
+    .main-nav {
+      text-align: center;
+      li {
+        display: inline-block;
+        background-color: $color-background;
+      }
+    }
+  }
+  @media screen and (min-width: $break-desktop) {
+    h1 {
+      @include col(left);
+    }
+    .main-nav {
+      @include col(right);
+    }
+  }
+}

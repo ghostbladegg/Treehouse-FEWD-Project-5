@@ -1,0 +1,37 @@
+body {
+  font-family: $font-family;
+}
+
+a {
+  @extend %head-color;
+  text-decoration: none;
+  @extend %text-uppercase;
+  &:link {
+    @extend %head-color;
+  }
+  &:visited {
+    @extend %head-color;
+  }
+  &:hover {
+    @extend %head-color;
+  }
+  &:active {
+    @extend %head-color;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+p, span {
+  @extend %text-color;
+}
+
+h2 {
+  @extend %text-uppercase;
+}
+
+h1, h2, h3 {
+  @extend %head-color;
+}

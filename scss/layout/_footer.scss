@@ -12,7 +12,7 @@ footer {
   .footer-nav {
     display: none;
   }
-  @media screen and (min-width: $break-tablet) {
+  @include tablet {
     > a {
       display: none;
     }

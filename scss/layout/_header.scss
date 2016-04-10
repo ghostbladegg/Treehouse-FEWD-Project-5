@@ -22,7 +22,7 @@ header {
       }
     }
   }
-  @media screen and (min-width: $break-tablet) {
+  @include tablet {
     .main-nav {
       text-align: center;
       li {
@@ -31,7 +31,7 @@ header {
       }
     }
   }
-  @media screen and (min-width: $break-desktop) {
+  @include desktop {
     h1 {
       @include col(left);
     }

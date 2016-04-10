@@ -1,3 +1,15 @@
+@mixin tablet {
+  @media screen and (min-width: $break-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $break-desktop) {
+    @content;
+  }
+}
+
 @mixin col($float: null, $width: null) {
   float: $float;
   width: $width;

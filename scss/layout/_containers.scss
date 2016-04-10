@@ -22,7 +22,7 @@
     @extend %text-size;
     @extend %font-weight-lighter;
   }
-  @media screen and (min-width: $break-tablet) {
+  @include tablet {
     img {
       @include col(right, 35%);
     }
@@ -48,13 +48,13 @@
     @extend %text-size;
     @extend %font-weight-lighter;
   }
-  @media screen and (min-width: $break-tablet) {
+  @include tablet {
     li {
       @include col(left, 50%);
       padding: 0 10px;
     }
   }
-  @media screen and (min-width: $break-desktop) {
+  @include desktop {
     margin: 15px;
     li {
       @include col(left, 33.33%);
@@ -76,12 +76,12 @@
       @extend %text-transform-none;
     }
   }
-  @media screen and (min-width: $break-tablet) {
+  @include tablet {
     p {
       padding: 0 50px;
     }
   }
-  @media screen and (min-width: $break-desktop) {
+  @include desktop {
     p {
       padding: 0 200px;
     }
